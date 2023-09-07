@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Manrope";
+    src: url("/dist/assets/fonts/Manrope-Light.ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/dist/assets/fonts/Manrope-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/dist/assets/fonts/Manrope-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/dist/assets/fonts/Manrope-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/dist/assets/fonts/Manrope-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Manrope";
+    src: url("/dist/assets/fonts/Manrope-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/dist/assets/fonts/PlayfairDisplay-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/dist/assets/fonts/PlayfairDisplay-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/dist/assets/fonts/PlayfairDisplay-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/dist/assets/fonts/PlayfairDisplay-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/dist/assets/fonts/PlayfairDisplay-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("/dist/assets/fonts/PlayfairDisplay-Black.ttf");
+    font-weight: 900;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 400;
+}
+
+li,
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    padding: 0 60px;
+}
+
+.header__inner {
+    height: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left,
+.header-right {
+    display: flex;
+    align-items: center;
+}
+.header-left{
+    gap: 46px;
+}
+.header-right{
+    gap: 32px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo__img {
+    margin-right: 12px;
+}
+
+.logo__text {
+    color: #141414;
+    font-family: "Playfair Display";
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 125%;
+}
+
+.phone {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.phone__text {
+    color: #141414;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 125%;
+    letter-spacing: -0.18px;
+}
+
+.menu__list {
+    display: flex;
+    gap: 36px;
+}
+
+.menu__item {
+    color: #555;
+    text-transform: capitalize;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 125%;
+}
+
+.drop-menu {
+    padding-right: 16px;
+    background-image: url(/dist/assets/images/chevron-down.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+
+.socials__list {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials__item {
+    height: 19px;
+}
+.reservation-btn {
+    width: 200px;
+    padding: 16px 0;
+    border: none;
+    background-color: #7A9CA5;
+
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation-btn__text {
+    color: #FFF;
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 125%;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}

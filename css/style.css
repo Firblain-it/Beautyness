@@ -1,72 +1,72 @@
 @font-face {
     font-family: "Manrope";
-    src: url("/dist/assets/fonts/Manrope-Light.ttf");
+    src: url("../assets/fonts/Manrope-Light.ttf");
     font-weight: 300;
 }
 
 @font-face {
     font-family: "Manrope";
-    src: url("/dist/assets/fonts/Manrope-Regular.ttf");
+    src: url("../assets/fonts/Manrope-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Manrope";
-    src: url("/dist/assets/fonts/Manrope-Medium.ttf");
+    src: url("../assets/fonts/Manrope-Medium.ttf");
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Manrope";
-    src: url("/dist/assets/fonts/Manrope-SemiBold.ttf");
+    src: url("../assets/fonts/Manrope-SemiBold.ttf");
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Manrope";
-    src: url("/dist/assets/fonts/Manrope-Bold.ttf");
+    src: url("../assets/fonts/Manrope-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Manrope";
-    src: url("/dist/assets/fonts/Manrope-ExtraBold.ttf");
+    src: url("../assets/fonts/Manrope-ExtraBold.ttf");
     font-weight: 800;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/dist/assets/fonts/PlayfairDisplay-Regular.ttf");
+    src: url("../assets/fonts/PlayfairDisplay-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/dist/assets/fonts/PlayfairDisplay-Medium.ttf");
+    src: url("../assets/fonts/PlayfairDisplay-Medium.ttf");
     font-weight: 500;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/dist/assets/fonts/PlayfairDisplay-SemiBold.ttf");
+    src: url("../assets/fonts/PlayfairDisplay-SemiBold.ttf");
     font-weight: 600;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/dist/assets/fonts/PlayfairDisplay-Bold.ttf");
+    src: url("../assets/fonts/PlayfairDisplay-Bold.ttf");
     font-weight: 700;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/dist/assets/fonts/PlayfairDisplay-ExtraBold.ttf");
+    src: url("../assets/fonts/PlayfairDisplay-ExtraBold.ttf");
     font-weight: 800;
 }
 
 @font-face {
     font-family: "Playfair Display";
-    src: url("/dist/assets/fonts/PlayfairDisplay-Black.ttf");
+    src: url("../assets/fonts/PlayfairDisplay-Black.ttf");
     font-weight: 900;
 }
 
@@ -83,6 +83,12 @@ html {
 }
 
 body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     font-family: "Manrope";
     font-size: 18px;
     font-weight: 400;
@@ -105,6 +111,9 @@ a {
     padding: 0 10px;
 }
 
+/*********************************************************/
+/*********HEADER******************************************/
+/*********************************************************/
 .header {
     padding: 0 60px;
 }
@@ -121,12 +130,15 @@ a {
     display: flex;
     align-items: center;
 }
-.header-left{
+
+.header-left {
     gap: 46px;
 }
-.header-right{
+
+.header-right {
     gap: 32px;
 }
+
 .logo {
     display: flex;
     align-items: center;
@@ -134,6 +146,7 @@ a {
 
 .logo__img {
     margin-right: 12px;
+    fill: none;
 }
 
 .logo__text {
@@ -142,6 +155,11 @@ a {
     font-size: 28px;
     font-weight: 700;
     line-height: 125%;
+}
+
+.header .logo__img {
+    height: 33px;
+    width: 33px;
 }
 
 .phone {
@@ -175,22 +193,29 @@ a {
 
 .drop-menu {
     padding-right: 16px;
-    background-image: url(/dist/assets/images/chevron-down.svg);
+    background-image: url(../assets/images/chevron-down.svg);
     background-repeat: no-repeat;
     background-position: center right;
     cursor: pointer;
 }
 
-.socials__list {
+.header .socials__list {
     width: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.socials__item {
+.header .socials__item {
     height: 19px;
 }
+
+.header .socials__icon {
+    display: block;
+    height: 19px;
+    width: 19px;
+}
+
 .reservation-btn {
     width: 200px;
     padding: 16px 0;
@@ -201,6 +226,7 @@ a {
     gap: 12px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .reservation-btn__text {
@@ -211,4 +237,119 @@ a {
     line-height: 125%;
     letter-spacing: 1.4px;
     text-transform: uppercase;
+}
+
+/*********************************************************/
+/*********FOOTER******************************************/
+/*********************************************************/
+.footer {
+    background-color: #1E2C30;
+}
+
+.footer-top {
+    padding-top: 52px;
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.footer .logo__img {
+    width: 65px;
+    height: 65px;
+}
+
+.footer .logo__text {
+    color: #FFF;
+    font-size: 40px;
+    letter-spacing: 0.8px;
+}
+
+.footer .socials__list {
+    display: flex;
+    gap: 10px;
+}
+
+.footer .socials__item {
+    width: 55px;
+    height: 55px;
+    border: 2px solid #5C8692;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .socials__icon {
+    display: block;
+    height: 22px;
+    width: 22px;
+
+    fill: #FFF
+}
+
+.footer-bottom {
+    padding-top: 52px;
+    padding-bottom: 66px;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 129px;
+}
+
+.footer-col__title {
+    margin-bottom: 21px;
+
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 140%;
+}
+
+.footer-col__link {
+    display: block;
+
+    color: #FFF;
+    font-family: "Manrope";
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 200%;
+    letter-spacing: -0.17px;
+}
+.footer__contacts-item{
+    display: flex;
+    gap: 14px;
+    align-items: start;
+    justify-content: space-between;
+}
+.footer__contacts-item:not(:last-child){
+    margin-bottom: 14px;
+}
+.footer__contacts-item span{
+    color: #FFF;
+    font-family: "Manrope";
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 150%;
+    letter-spacing: -0.17px;
+}
+.footer__contacts-item a{
+    width: 234px;
+    line-height: 170%;
+}
+.footer-copy {
+    padding: 20px 0;
+    background-color: #111E22;
+    text-align: center;
+}
+
+.footer-copy__text {
+    color: #FFF;
+    font-family: "Manrope";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: -0.18px;
 }

@@ -306,10 +306,48 @@ a {
 }
 
 .discount__offer {
-    width: 167px;
+    width: 455px;
+    display: flex;
+}
+
+.discount__offer .contacts {
+    width: 288px;
+    padding: 19px 40px;
+    background-color: #fff;
+    border: 1px solid #95BFCB;
+}
+
+.discount__offer .contacts p {
+    background-image: url(../assets/images/dots.svg);
+    background-repeat: no-repeat;
+
+    padding-left: 49px;
+    color: #141414;
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 150%;
+    letter-spacing: 1.12px;
+    text-transform: uppercase;
+}
+
+.discount__offer .contacts p:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.discount__offer .contacts a {
+    display: block;
+    color: #141414;
+    font-family: "Manrope";
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 150%;
+    letter-spacing: 0.1px;
+    text-transform: lowercase;
 }
 
 .discount__offer .offer {
+    width: 167px;
     padding: 12px 0;
     background: #1E2C30;
     text-align: center;

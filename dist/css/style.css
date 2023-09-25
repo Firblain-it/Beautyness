@@ -277,7 +277,100 @@ a {
 }
 
 /***************************************************************/
-/*********DISCOUNT**********************************************/
+/*********TESTIMONIALS**********************************************/
+/***************************************************************/
+.testimonials {
+    padding: 147px 0;
+    background-color: #EDF5F7;
+}
+
+.testimonials__inner {
+    text-align: center;
+}
+
+.testimonials .section-subtitle {
+    margin-bottom: 40px;
+}
+.testimonials__content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.testimonials__item {
+    width: 582px;
+}
+
+.testimonials__item-comment {
+    padding: 44px 51px;
+    background-color: #fff;
+
+    text-align: left;
+    color: #141414;
+    font-family: "Manrope";
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 180%;
+}
+
+.testimonials__item-author {
+    padding: 26px 51px;
+    background-color: #1E2C30;
+}
+
+.testimonials__item-author {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.author__img {
+    width: 74px;
+    height: 74px;
+    border: 2px solid #FFF;
+}
+
+.author__info {
+    text-align: left;
+    margin-left: 20px;
+    margin-right: auto;
+}
+
+.rate {
+    display: flex;
+}
+
+.star,
+.half-star {
+    fill: #FFF;
+    width: 16px;
+    height: 16px;
+}
+
+.author__info .name {
+    color: #FFF;
+    font-family: "Playfair Display";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 160%;
+    letter-spacing: -0.2px;
+}
+
+.author__info .country {
+    color: #FFF;
+    font-family: "Manrope";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.42px;
+}
+
+.quote {
+    width: 70px;
+    height: 55px;
+}
+
+/***************************************************************/
+/*********BENEFITS**********************************************/
 /***************************************************************/
 .benefits {
     padding: 144px 0 161px 0;
